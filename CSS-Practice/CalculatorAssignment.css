@@ -5,6 +5,7 @@
     background-color: #6699ff;
 
 }
+
 .cal-2{
     text-align: center;
     background-color: 	#404040;
@@ -18,8 +19,7 @@
     border-radius: 15px;
     box-shadow: 26px 12px 10px #666699;
    
- 
-}
+ }
 
 .cal-3{
     text-align: center;
@@ -36,10 +36,10 @@
     
 }
 
-
 .input{
         width: 270px;
         height: 50px;
+        text-align: right;
         border-radius: 10px;
         margin-top: 25px;
         margin-bottom: 30px;
@@ -66,8 +66,7 @@
 
 .btn-style {
                 background-color: orange;
-                
-
+            
 }
 
 .font-style {
