@@ -33,7 +33,8 @@ ppc_rv = mc_rv + tc + uc_rv + spc + stc
 ppc_cc = mc_cc + tc + uc_cc + spc + stc
 ppc_ls = mc_ls + tc + uc_ls + spc + stc
 
-document.write("Answer-1")
+document.write("Answer-1") 
+document.write("<br>");
 
 document.write(ppc_bf)
 document.write(ppc_vc)
