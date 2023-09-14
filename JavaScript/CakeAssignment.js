@@ -11,7 +11,7 @@ mc_ls = 190
 
 tc = 50
 
-// us = utility cost perpound
+// uc = utility cost per pound
 
 uc_bf = (mc_bf + tc)*(3/100)
 uc_vc = (mc_vc + tc)*(3/100)
@@ -47,15 +47,15 @@ q_bf = 5
 q_vc = 7
 q_rv = 9
 q_cc = 11
-q_ls= 13
+q_ls = 13
 
 // tic = total inventory cost
 
-tic_bf = ppc_bf * q_bf
-tic_vc = ppc_vc * q_vc
-tic_rv = ppc_rv * q_rv
-tic_cc = ppc_cc * q_cc
-tic_ls = ppc_ls * q_ls
+tic_bf = Math.round(100*ppc_bf * q_bf)/100
+tic_vc = Math.round(100*ppc_vc * q_vc)/100
+tic_rv = Math.round(100*ppc_rv * q_rv)/100
+tic_cc = Math.round(100*ppc_cc * q_cc)/100
+tic_ls = Math.round(100*ppc_ls * q_ls)/100
 
 console.log("")
 console.log("Answer-2")
@@ -108,11 +108,11 @@ console.log(ppp_ls)
 
 // tp = total profit
 
-tp_bf = ppp_bf * q_bf
-tp_vc = ppp_vc * q_vc
-tp_rv = ppp_rv * q_rv
-tp_cc = ppp_cc * q_cc
-tp_ls = ppp_ls * q_ls
+tp_bf = Math.round(100*ppp_bf * q_bf)/100
+tp_vc = Math.round(100*ppp_vc * q_vc)/100
+tp_rv = Math.round(100*ppp_rv * q_rv)/100
+tp_cc = Math.round(100*ppp_cc * q_cc)/100
+tp_ls = Math.round(100*ppp_ls * q_ls)/100
 
 console.log("")
 console.log("Answer-5")
@@ -124,11 +124,11 @@ console.log(tp_ls)
 
 // pp = profit percentage
 
-pp_bf = (tp_bf / tic_bf)*100
-pp_vc = (tp_vc / tic_vc)*100
-pp_rv = (tp_rv / tic_rv)*100
-pp_cc = (tp_cc / tic_cc)*100
-pp_ls = (tp_ls / tic_ls)*100
+pp_bf = Math.round((tp_bf / tic_bf)*10000)/100
+pp_vc = Math.round((tp_vc / tic_vc)*10000)/100
+pp_rv = Math.round((tp_rv / tic_rv)*10000)/100
+pp_cc = Math.round((tp_cc / tic_cc)*10000)/100
+pp_ls = Math.round((tp_ls / tic_ls)*10000)/100
 
 console.log("")
 console.log("Answer-6")
